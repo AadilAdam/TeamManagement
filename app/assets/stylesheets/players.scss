@@ -1,0 +1,140 @@
+// Place all the styles related to the players controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.pt-100{
+    padding-top:100px;
+}
+.pb-100{
+    padding-bottom:100px;
+}
+.section-title {
+  margin-bottom: 60px;
+}
+.section-title p {
+	color: #777;
+	font-size: 16px;
+}
+.section-title h4 {
+	text-transform: capitalize;
+	font-size: 40px;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.section-title h4:before {
+	position: absolute;
+	content: "";
+	width: 60px;
+	height: 2px;
+	background-color: #ff3636;
+	bottom: 0;
+	left: 50%;
+	margin-left: -30px;
+}
+.section-title h4:after {
+	position: absolute;
+	background-color: #ff3636;
+	content: "";
+	width: 10px;
+	height: 10px;
+	bottom: -4px;
+	left: 50%;
+	margin-left: -5px;
+	border-radius: 50%;
+}
+
+.single-team img {
+  width: 100%;
+}
+.single-team {
+  position: relative;
+}
+.team-hover {
+  background-color: #222;
+  color: #fff;
+  position: absolute;
+  bottom: -107px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  -webkit-transition: .4s;
+  transition:.4s
+}
+.team-hover h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.team-hover h4 span {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+.team-hover a {
+  display: inline-block;
+  color: #fff;
+  padding: 0 5px;
+}
+.single-team:hover .team-hover {
+  bottom: 0;
+}
+.single-team {
+  overflow: hidden;
+}
+
+
+//image container for index and show pages.
+
+.image-container{
+ height: 350px;
+ width: 100%;
+ background-size: cover;
+ padding: 5px;
+}
+
+
+// this sections of CSS is for profile show page
+
+	.portfolio{
+		padding:6%;
+		text-align:center;
+		background: linear-gradient(90deg, #e8e8e8 50%, #3d009e 50%);
+	}
+	.heading{
+		background: #fff;
+		padding: 1%;
+		text-align: left;
+		box-shadow: 0px 0px 4px 0px #545b62;
+	}
+	.heading img{
+		width: 10%;
+	}
+	.bio-info{
+		padding: 5%;
+		background:#fff;
+		box-shadow: 0px 0px 4px 0px #b0b3b7;
+	}
+	.name{
+		font-family: 'Charmonman', cursive;
+		font-weight:600;
+	}
+	.bio-image{
+		text-align:center;
+	}
+	.bio-image img{
+		border-radius:50%;
+	}
+	.bio-content{
+		text-align:left;
+	}
+	.bio-content p{
+		font-weight:600;
+		font-size:30px;
+	}
+
+
+	

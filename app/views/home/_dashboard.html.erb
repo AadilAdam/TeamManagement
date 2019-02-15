@@ -1,0 +1,64 @@
+<section class="section pt3">
+	<p class="title is-5 border-bottom pb3 has-text-centered">Welcome <%= current_user.name %> 👋🏻</p>
+	<div class="columns">
+
+		<div class="column border-right ph4">
+			<div class="level">
+				<div class="level-left">
+					<h3 class="subtitle is-5">My Projects <span class="tag is-rounded">0</span></h3>
+				</div>
+				<div class="level-right">
+					<p class="field">
+						<%= link_to '#', class: 'button is-small' do %>
+							<span class="icon is-small has-text-link"><i class="fa fa-plus"></i></span>
+						<% end %>
+					</p>
+				</div>
+			</div>
+			<hr />
+				<div class="content border-bottom pb4">
+					<p class="title is-4">
+						<%= link_to "Project Name", '#' %>
+					</p>
+					<p class="subtitle is-6">
+						<%= link_to 'project team name', '#' %>
+					</p>
+					<p class="f6">Created by: Name</p>
+				</div>
+		
+		</div>
+		<div class="column border-right ph4">
+			<div class="level">
+				<div class="level-left">
+					<h3 class="subtitle is-5">My Teams <span class="tag is-rounded">0</span></h3>
+				</div>
+				<div class="level-right">
+					<p class="field">
+						<%= link_to '#' , class: 'button is-small' do %>
+							<span class="icon is-small has-text-link"><i class="fa fa-plus"></i></span>
+						<% end %>
+					</p>
+				</div>
+			</div>
+			<hr />
+
+				<div class="content border-bottom pb4">
+					<p class="title is-4">
+						<%= link_to 'name' , '#' %>
+					</p>
+					<p class="subtitle is-6">0 Members</p>
+					<span class="f6">Dhoni, virat</span>
+				</div>
+
+		</div>
+
+		<div class="column ph4">
+			<h3 class="subtitle is-5">Activity</h3>
+			<hr />
+			<ul class="list">
+				<li>Activity Name</li>
+			</ul>
+		</div>
+	
+	</div>
+</section>

@@ -1,0 +1,53 @@
+<!-- <p id="notice"><%= notice %></p> -->
+
+<div class="container portfolio">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="heading">				
+				<%= link_to 'Edit', edit_team_player_path(team_id: @player.team_id, id: @player.id), class: "btn btn-primary" %> |
+
+
+				<%= link_to 'Destroy', team_player_path, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-warning" %> |
+
+				<%= link_to 'Back '.html_safe, team_players_path, class: "btn btn-info" %>
+
+			</div>
+
+		</div>	
+	</div>
+	<div class="bio-info">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="bio-image">
+							<% if @player.image %>
+			                  <%= image_tag image_url(@player.image), class: "img-fluid" %>
+			              <% end %>
+						</div>		
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="col-md-6">
+				<div class="bio-content">
+					<p>
+						<%= @player.name %>
+					</p>
+					<p>
+					  <!-- <strong>Description:</strong> -->
+					  <%= @player.description %>
+					</p>
+
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+
+
+<%#= link_to 'Edit', edit_team_player_path(team_id: @player.team_id, id: @player.id) %> |
+<%#= link_to 'Destroy', team_player_path, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %> |
+<%#= link_to 'Back', team_players_path %>

@@ -1,0 +1,38 @@
+<!-- <p id="notice"><%= notice %></p> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-xl-8 mx-auto text-center">
+      <div class="section-title">
+        <h4> <%= @team.name %> </h4>
+        <p><%= link_to 'Add New Player', new_team_player_path, class: "btn btn-primary" %></p>
+      </div>
+    </div>
+  </div>
+  <div class="row top-buffer">
+    <% @players.each do |player| %>
+      <div class="col-md-4">
+        <div class="single-team justify-content-center">
+            <% if player.image %>
+                <%= image_tag image_url(player.image), class: "rounded image-container" %>
+            <% end %>
+          <div class="team-hover">
+            <h4><%= player.name %></h4>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <%= link_to 'Show', team_player_path(team_id: player.team_id, id: player.id), class: "btn btn-info" %>
+          <%= link_to 'Edit', edit_team_player_path(team_id: player.team_id, id: player.id), class: "btn btn-secondary" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+<br>
+<div class="justify-content-center">
+  <%= paginate @players %>
+<%#= page_entries_info @players %>
+</div>
+
+<%#= link_to 'Add New Player', new_team_player_path, class: "btn btn-primary" %>
+
