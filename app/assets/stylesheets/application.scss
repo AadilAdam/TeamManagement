@@ -18,7 +18,11 @@
 @import "bootstrap";
 
 
-
+body {
+	background-image: image-url("background.jpeg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
 .navbar-brand img
 {
     height : 100px;
@@ -26,3 +30,7 @@
 }
 
 .top-buffer { border-spacing: 10px; }
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}

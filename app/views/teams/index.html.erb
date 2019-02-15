@@ -16,9 +16,9 @@
 
             <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ajax-modal" data-url="<%= edit_team_path(team) %>">Edit</button> -->
 
-            <a data-toggle="modal" data-url="<%= edit_team_path(team) %>" class="open-AddPointDialog btn btn-primary big" data-target="#addPointDialog"> Edit </a>
+            <a data-toggle="modal" data-url="<%= edit_team_path(team) %>" class="open-AddPointDialog btn btn-primary big" data-target="#addPointDialog"> <i class="fas fa-edit"></i> Edit </a>
 
-            <%= link_to 'Destroy', team, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-warning" %>
+            <%= link_to '<i class="fas fa-trash-alt"></i> Destroy '.html_safe, team, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-warning" %>
           </div>
         </div>
       <% end %>

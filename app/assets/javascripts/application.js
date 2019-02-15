@@ -17,6 +17,5 @@
 
 //= require activestorage
 //= require turbolinks
-//  require bootstrap/modal
 //= require_tree .
 

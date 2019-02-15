@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="background-color: red">
   <%= simple_form_for [@team, @player] do |f| %>
     <%= f.error_notification %>
     <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>

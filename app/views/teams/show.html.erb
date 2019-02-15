@@ -1,5 +1,3 @@
-<!-- <p id="notice"><%= notice %></p> -->
-
 <div class="about-section paddingTB60 gray-bg">
     <div class="container">
         <div class="row">
@@ -13,7 +11,9 @@
 					
                </div>
 
-               <%= link_to '<button type="button" class= "btn btn-primary" >Edit</button>'.html_safe, edit_team_path(@team) %> |
+               <%#= link_to '<button type="button" class= "btn btn-primary" >Edit</button>'.html_safe, edit_team_path(@team) %> 
+
+               <a data-toggle="modal" data-url="<%= edit_team_path(@team) %>" class="open-AddPointDialog btn btn-primary big" data-target="#addPointDialog"> <i class="fas fa-edit"></i> Edit </a> 
 
                <%= link_to '<button type="button" class= "btn btn-secondary" >Back</button>'.html_safe, teams_path %> |
 
@@ -30,6 +30,8 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade " id="addPointDialog" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"></div>
 
 <%#= link_to 'Edit', edit_team_path(@team), class: "btn btn-primary" %> 
 
